@@ -7,7 +7,7 @@ body{
     margin-top: 25px;
     display: grid;
     grid-template-columns: 30% 70%;
-    background-color: #0e6296;
+    background-color: #083755;
     padding: 20px;
     border-radius: 10px;
     color: white;
@@ -45,7 +45,7 @@ ul{
     margin-bottom: 20px;
 }
 footer{
-    background-color: #0e6296;
+    background-color: #083755;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
