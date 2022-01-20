@@ -1,0 +1,36 @@
+
+header, footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    display: block;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+:root {
+    --primary-color: #555B6E;
+    --secondary-color: #89B0AE;
+    --accent-color: #FFD6BA;
+    --border-color: #BEE3DB;
+    --heading-font: Nunito Sans, Bebas Neue;
+    --paragraph-font: Inter, roboto, sans-serif;
+    --paragraph-color: #000;
+    --nav-font: Yaldevi, roboto, sans-serif;
+    --headline-color-on-white: black;
+    --headline-color-on-color: #fff;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: #fff;
+    --text-background-color: #B0D0D3;
+    --nav-link-color: #FFFFFF;
+    --nav-link-color-on-white: #000;
+    --nav-background-color: #C08497;
+    --nav-hover-link-color: #fff;
+    --nav-hover-background-color: #B0D0D3;
+}
