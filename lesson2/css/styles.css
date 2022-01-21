@@ -1,37 +1,122 @@
-element.style {
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
-    --primary-color: #555B6E;
-    --secondary-color: #89B0AE;
-    --accent-color: #FFD6BA;
-    --border-color: #BEE3DB;
-    --heading-font: Nunito Sans, Bebas Neue;
-    --paragraph-font: Inter, roboto, sans-serif;
-    --paragraph-color: #000;
-    --nav-font: Yaldevi, roboto, sans-serif;
-    --headline-color-on-white: black;
-    --headline-color-on-color: #fff;
-    --paragraph-color-on-white: black;
-    --paragraph-color-on-color: #fff;
-    --text-background-color: #B0D0D3;
-    --nav-link-color: #FFFFFF;
-    --nav-link-color-on-white: #000;
-    --nav-background-color: #C08497;
-    --nav-hover-link-color: #fff;
-    --nav-hover-background-color: #B0D0D3;
+  --poppins: Poppins, roboto, sans-serif;
+  --inter: Inter, roboto, sans-serif;
+  --foreground: #3f3f3f;
+  --foreground-light: #f2f2f2;
+  --header-background: #0b1f31;
+  --card-background: #eeeeee;
+  --card-header-background: #3a4958;
+  --card-border: #b2a8b3;
+  --radius-md: 0.6rem;
 }
-html {
-    margin: 0;
-    padding: 0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--poppins);
 }
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
+
+body {
+  background-color: #fdfdfd;
 }
-html[Attributes Style] {
-    -webkit-locale: "en";
+
+header,
+footer {
+  background-color: var(--header-background);
+  color: var(--foreground-light);
 }
-user agent stylesheet
-html {
-    display: block;
+
+header {
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0.7rem;
+  font-weight: inherit;
+}
+
+header h2 {
+  font-family: var(--inter);
+}
+
+main {
+  padding: 1.4rem 1rem;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.card {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+  color: var(--foreground);
+  border-radius: var(--radius-md);
+}
+
+.card-header {
+  background-color: var(--card-header-background);
+  color: var(--foreground-light);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+	letter-spacing: .05rem;
+}
+
+.card-header,
+.card-body {
+  padding: 0.8rem;
+}
+
+.card-body .description {
+	font-family: var(--inter);
+}
+
+.card .title {
+  margin-bottom: 1rem;
+}
+
+.image {
+  border: 1px solid var(--card-border);
+  border-radius: 0.3rem;
+  margin: 0.7rem 0;
+}
+
+.description {
+  line-height: 1.15em;
+}
+
+footer {
+  text-align: center;
+  padding: 1.1rem;
+}
+
+footer h4 {
+  font-family: var(--inter);
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item:last-of-type {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-item:last-of-type {
+    grid-column: initial;
+  }
 }
