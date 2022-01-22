@@ -30,8 +30,8 @@
 .color_name {
   text-align: center;
   padding: 0.6rem;
-	font-size: .8rem;
-	font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 .palette0 {
   background-color: var(--palette0);
@@ -61,26 +61,36 @@
   background-color: var(--palette8);
 }
 .palette p {
-	font-family: var(--inter);
-	margin: .6rem 0;
+  font-family: var(--inter);
+  margin: 0.6rem 0;
   line-height: 1.3rem;
 }
 
-@media (min-width: 568px) {
-	.color_name {
-		min-width: 140px;
-		font-size: initial;
-	}
+@media (min-width: 658px) {
+  .color_name {
+    min-width: 140px;
+    font-size: initial;
+  }
 }
 
-.palette h3 { border-bottom: 1px solid var(--palette3); }
+@media (min-width: 858px) {
+  section {
+    padding: 3rem 5rem;
+  }
+}
+
+.palette h3 {
+  border-bottom: 1px solid var(--palette3);
+}
 .palette_group {
-	border: .06rem solid var(--palette3);
-	box-shadow: .1rem .1rem .2rem var(--palette3);
+  border: 0.06rem solid var(--palette3);
+  box-shadow: 0.1rem 0.1rem 0.2rem var(--palette3);
 }
 
-.mode--dark .palette h3 { border-bottom: 1px solid var(--palette2); }
+.mode--dark .palette h3 {
+  border-bottom: 1px solid var(--palette2);
+}
 .mode--dark .palette_group {
-	border: .06rem solid var(--palette2);
-	box-shadow: .1rem .1rem .2rem var(--palette2);
+  border: 0.06rem solid var(--palette2);
+  box-shadow: 0.1rem 0.1rem 0.2rem var(--palette2);
 }
