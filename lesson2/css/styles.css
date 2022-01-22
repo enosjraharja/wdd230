@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Nunito+Sans&display=swap');
 
 :root {
-  --primary-color: #555B6E;
+  --primary-color: #083755;
   --secondary-color: #89B0AE;
   --accent-color: #FFD6BA;
   --border-color: #BEE3DB;
 
-  --heading-font: Nunito Sans, Bebas Neue;
+  --heading-font: Poppins, Bebas Neue;
   --paragraph-font: Inter, roboto, sans-serif;
   --paragraph-color: #000;
-  --nav-font: Yaldevi, roboto, sans-serif;
+  --nav-font: Poppins, roboto, sans-serif;
 
   --headline-color-on-white: black;  /* headlines on a white background */ 
   --headline-color-on-color: #fff; /* headlines on a colored background */ 
