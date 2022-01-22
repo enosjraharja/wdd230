@@ -1,0 +1,42 @@
+body {
+  background-color: var(--background_light);
+  color: var(--foreground_light);
+}
+
+section {
+  background-color: var(--palette5);
+}
+
+.burger_button i {
+	background-color: var(--foreground_light);
+}
+
+header h1 a {
+  color: var(--foreground_light);
+}
+
+
+.mode--dark body {
+  background-color: var(--background_dark);
+  color: var(--foreground_dark);
+}
+
+.mode--dark section {
+  background-color: var(--palette1);
+}
+
+.mode--dark .burger_button i {
+	background-color: var(--foreground_dark);
+}
+
+.mode--dark header h1 a {
+  color: var(--foreground_dark);
+}
+
+
+.mode--dark .moon {
+	display: none;
+}
+.mode--dark .sun {
+	display: inline-block;
+}
