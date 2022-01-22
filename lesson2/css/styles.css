@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
   --poppins: Poppins, roboto, sans-serif;
@@ -100,7 +99,6 @@ footer {
 
 footer h4 {
   font-family: var(--inter);
-  font-weight: 300;
 }
 
 @media (min-width: 768px) {
