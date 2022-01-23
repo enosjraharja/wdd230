@@ -42,6 +42,10 @@ a {
   color: var(--primary);
 }
 
+p {
+	margin: 1.2rem 0;
+}
+
 header {
   margin: 0.8rem 0;
   display: flex;
@@ -134,11 +138,13 @@ main h2 {
 
 section {
   margin: 1rem;
-  padding: 0.8rem;
+  padding: 1.8rem;
   border-radius: 0.4rem;
 }
 
 footer {
+	display: flex;
+	flex-direction: column;
   margin: 2rem 0.2rem;
   text-align: center;
 }
@@ -146,6 +152,10 @@ footer {
 .year {
   font-style: 2rem;
 }
+footer span:last-of-type {
+	font-weight: 600;
+}
+
 .--hide {
   transform: translateX(-120%);
 }
@@ -166,6 +176,27 @@ footer {
   color: var(--foreground);
   font-size: 2.5rem;
   transform: translate(1rem, -100%) rotate(90deg);
+}
+
+.base_group {
+	margin: 2.5rem 0;
+}
+.base_group > * {
+	margin-bottom: .8rem;
+}
+.base_group h4 {
+	display: inline-block;
+	padding: .4rem .6rem;
+	border-radius: .3rem;
+	background-color: var(--palette3);
+	color: var(--palette2);
+}
+.base_group .refs {
+	display: block;
+	font-weight: 600;
+}
+.base_group p {
+	margin: 0;
 }
 
 @media (min-width: 658px) {
