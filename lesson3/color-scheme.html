@@ -1,138 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Color Schemes</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="/wdd230/lesson3/assets/normalize.css" rel="stylesheet" />
-    <link href="/wdd230/lesson3/assets/global.css" rel="stylesheet" />
-    <link href="/wdd230/lesson3/assets/colorscheme.css" rel="stylesheet" />
-    <link href="/wdd230/lesson3/assets/mode.css" rel="stylesheet" />
-    <script>
-      localStorage.getItem('mode') == 'dark' &&
-        document.documentElement.classList.add('mode--dark')
-    </script>
-  </head>
-
-  <body>
-    <header>
-      <h1><a href="/wdd230/lesson3/">WPD</a></h1>
-      <nav class="--hide">
-        <ul>
-          <li><a href="/wdd230/lesson3/">Home</a></li>
-          <li><a href="/wdd230/lesson3/target-audience.html">Target Audience</a></li>
-          <li><a href="/wdd230/lesson3/color-scheme.html">Color scheme</a></li>
-          <li><a href="/wdd230/lesson3/typography.html">Typography</a></li>
-        </ul>
-      </nav>
-      <span class="mode_button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          fill="moon"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          fill="currentColor"
-          class="sun"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-          />
-        </svg>
-      </span>
-      <span class="burger_button">
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
-    </header>
-    <main>
-      <h2>Color Scheme</h2>
-      <p class="description">
-        A total of nine, carefully selected, dimmed pastel colors for a
-        eye-comfortable, but yet colorful ambiance.
-      </p>
-      <section>
-        <div class="palette">
-          <h3>Dark</h3>
-          <div class="palette_group">
-            <div class="color_group">
-              <div class="color_hex palette0"></div>
-              <div class="color_name">#242933</div>
-            </div>
-            <div class="color_group">
-              <div class="color_hex palette1"></div>
-              <div class="color_name">#2E3440</div>
-            </div>
-            <div class="color_group">
-              <div class="color_hex palette2"></div>
-              <div class="color_name">#4C566A</div>
-            </div>
-          </div>
-          <p>
-            Commonly used for base elements like backgrounds or text color in
-            <em>bright ambiance designs</em>.
-          </p>
-        </div>
-        <div class="palette">
-          <h3>Bright</h3>
-          <div class="palette_group">
-            <div class="color_group">
-              <div class="color_hex palette3"></div>
-              <div class="color_name">#D8DEE9</div>
-            </div>
-            <div class="color_group">
-              <div class="color_hex palette4"></div>
-              <div class="color_name">#ECEFF4</div>
-            </div>
-            <div class="color_group">
-              <div class="color_hex palette5"></div>
-              <div class="color_name">#FAFAFA</div>
-            </div>
-          </div>
-          <p>
-            Commonly used for text colors or base UI elements in
-            <em>bright ambiance designs</em>.
-          </p>
-        </div>
-        <div class="palette">
-          <h3>Primary</h3>
-          <div class="palette_group">
-            <div class="color_group">
-              <div class="color_hex palette6"></div>
-              <div class="color_name">#5E81AC</div>
-            </div>
-            <div class="color_group">
-              <div class="color_hex palette7"></div>
-              <div class="color_name">#81A1C1</div>
-            </div>
-            <div class="color_group">
-              <div class="color_hex palette8"></div>
-              <div class="color_name">#88C0D0</div>
-            </div>
-          </div>
-          <p>
-            Commonly used for primary UI component and text highlighting and
-            other essential elements. All colors of this palette are used the
-            same for both <em>dark & bright ambiance designs</em>.
-          </p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <span class="year"></span>
-    </footer>
-    <div class="overlay --hide"></div>
-    <script src="/wdd230/lesson3/assets/main.js"></script>
-  </body>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="description" content="This is the typography page for EnosJRaharja's Chamber of Commerce project for WDD230." />
+            <meta name="author" content="EnosJRaharja" />
+            <link rel="stylesheet" href="../css/normalize.css">
+            <link rel="stylesheet" href="../css/stylesheet.css" />
+            <link rel="stylesheet" href="../css/medium.css" />
+            <link rel="stylesheet" href="../css/large.css" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+                <title>Alistair Chamber of Commerce Site-Plan Typography</title>
+        </head>
+        <body class="les3body">
+            <header class="l2titlebox" id="les2header">
+                <h1>Chamber of Commerce Site Plan</h1>
+                <h2>Typography</h2>
+            </header>
+            <nav class="chambnav">
+                <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./target-audience.html">Target Audience</a></li>
+                <li><a href="./color-scheme.html">Color Scheme</a></li>
+                <li><a href="./typography.html">Typography</a></li>
+                </ul>
+            </nav>
+            <main class="typography">
+                <h3>Website Typography</h3>
+                <p id="ptypography">For the Chamber Website, I chose the Roboto Condensed and Barlow Condensed fonts. They are similar looking to the font that appears in the Treasure Valley Chamber of Commerce logo on the home page, and I think they will fit the site well.</p>
+                <h3>Roboto Condensed (at weight 400) Example:</h3>
+                <p id="robotocon">I've never met a soldier who knew he was a hero. It's not false modesty. They simply decide to do something they know they must do, usually for their comrades, because if they don't, those people will suffer in some way. For them, that compulsion is far stronger than any fear. The fact that we find that exceptional is a sad indictment of the human race.  I'd like to live in a world of heroes. If we did, there would be no wars. - General Jolyon Iver, Commander, COG Land Forces (Gears of War: Aspho Fields pg. 211)</p>
+                <h3>Barlow Condensed (at weight 400) Example:</h3>
+                <p id="barlowcon">"The planners of war rarely face the suffering that the people do. It’s when whole families and entire cities face suffering that we see the real horror. We ought to be grateful for peace every day of our lives, but we ought to be vigilant to prevent the types of warfare, the aggressive behavior, the dominance of one military force over another that we have witnessed in the past." —President Thomas S. Monson</p>
+            </main>    
+            <footer>
+                <p>&copy;<span id="year"></span> :|: Ian Finch :|: Idaho </p>  
+                <p id="lastmod"></p>
+            </footer>
+        <script src="../js/dates.js"></script>
+        </body>
 </html>
