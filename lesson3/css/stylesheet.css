@@ -4,7 +4,7 @@
 }
 .titlebox{
     margin-top: 25px;
-    background-color: #396e35;
+    background-color: #662D91;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -47,7 +47,7 @@ ul{
 footer{
     font-family: "Spline Sans", sans-serif, Helvetica;
     font-weight: 500;
-    background-color: #396e35;
+    background-color: #662D91;
     color: white;
     margin-bottom: 25px;
     padding: 20px;
@@ -65,7 +65,7 @@ footer{
     margin-top: 25px;
     display: grid;
     grid-template-rows: 50% 50%;
-    background-color: #396e35;
+    background-color: #662D91;
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -153,7 +153,7 @@ footer{
 .chambnav{
     max-width: 100%;
     padding: 10px;
-    background-color: darkslategray;
+    background-color: #F26522;
     text-align: center;
     border-radius: 5px;
 }
@@ -176,7 +176,7 @@ nav a{
     padding: 15px;
 }
 nav a:hover{
-    background-color: #396e35;
+    background-color: #662D91;
     color: moccasin;
 }
 .chamberimage{
@@ -198,7 +198,7 @@ nav a:hover{
     font-weight: 400;
 }
 #robotocon{
-    font-family: "Roboto Condensed", sans-serif, Helvetica;
+    font-family: 'itc-avant-garde-gothic-std-demi-condensed-oblique',, sans-serif, Helvetica;
     font-weight: 400;
 }
 #barlowcon{
