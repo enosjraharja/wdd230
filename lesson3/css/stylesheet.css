@@ -1,0 +1,178 @@
+.indexbody{
+    margin:auto;
+    max-width: 600px;
+}
+.titlebox{
+    margin-top: 25px;
+    background-color: #662D91;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.ianimage{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+#indexheader{
+    font-family: "Spline Sans", sans-serif, Helvetica;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+
+}
+#portallist{
+    font-family: "Poppins", sans-serif, Helvetica;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 0;
+}
+ul{
+    font-family: "Poppins", sans-serif, Helvetica;
+    list-style-type: disc;
+    font-weight: 500;
+}
+.maingrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-bottom: 2px solid black;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+}
+footer{
+    font-family: "Spline Sans", sans-serif, Helvetica;
+    font-weight: 500;
+    background-color: #396e35;
+    color: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* The following rules are specific to the Lesson 2 Assignment*/
+
+.les2body{
+    margin:auto;
+    max-width: 75%;
+}
+
+.l2titlebox{
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: #662D91;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#les2header{
+    font-family: "Spline Sans", sans-serif, Helvetica;
+    font-weight: 600;
+    grid-column: 2;
+    text-align:center;
+    align-items: center;
+    padding-top: 25px;
+}
+.designgrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+}
+.designbox{
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 2px solid gray;
+    margin: 10px;
+    width: 87%;
+    align-items: center;
+    font-family: "Poppins", sans-serif, Helvetica;
+}
+
+.designbox h3{
+    background-color: gray;
+    color: white;
+    margin: 0px;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.designbox p{
+    margin: 10px;
+    padding: 10px;
+}
+
+.designbox h4{
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.mobileimg{
+    display: block;
+    margin: auto;
+    max-width: 90%;
+}
+
+/* The following applies to the Lesson 3: Chamber of Commerce Site Plan. */
+.les3body{
+    margin:auto;
+}
+#chambermain{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    word-break: break-word;
+}
+#chambermain h3{
+    font-family:"Spline Sans", sans-serif, Helvetica;
+    font-weight: 700;
+    text-align: center;
+}
+#chambermain p{
+    font-family: "Poppins", sans-serif, Helvetica;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.chambnav{
+    max-width: 100%;
+    padding: 10px;
+    background-color: #F26522;
+    text-align: center;
+    border-radius: 5px;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+nav ul li{
+    flex: 1 1 auto;
+}
+nav li{
+    display: list-item;
+}
+nav a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+nav a:hover{
+    background-color: #EF4136;
+    color: moccasin;
+}
+#chamberimage{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
