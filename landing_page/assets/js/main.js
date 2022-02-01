@@ -1,7 +1,6 @@
 let banner, bannerPrev, bannerNext, testimonials, partners
 
-const toggleMenu = () =>
-  document.querySelector('ul.menu').classList.toggle('hide')
+const toggleMenu = () => document.querySelector('ul.menu').classList.toggle('hide')
 
 if (document.querySelector('.banner-items') != undefined) {
   banner = tns({
@@ -37,33 +36,39 @@ if (document.querySelector('.testimonial-items') != undefined) {
   })
 }
 
-partners = tns({
-  container: '.partner-items',
-  controls: false,
-  mouseDrag: true,
-  autoplay: true,
-  autoplayButton: false,
-  autoplayButtonOutput: false,
-  autoplayHoverPause: true,
-  nav: false,
-  responsive: {
-    640: {
-      items: 3,
+if (document.querySelector('.partner-items') != undefined) {
+  partners = tns({
+    container: '.partner-items',
+    controls: false,
+    mouseDrag: true,
+    autoplay: true,
+    autoplayButton: false,
+    autoplayButtonOutput: false,
+    autoplayHoverPause: true,
+    nav: false,
+    responsive: {
+      640: {
+        items: 3,
+      },
     },
-  },
-})
+  })
+}
 
 window.addEventListener('scroll', () => {
-  (window.scrollY > 200)
+  window.scrollY > 200
     ? document.querySelector('header').classList.add('fixed')
     : document.querySelector('header').classList.remove('fixed')
 })
 
 if (document.querySelector('.single-services') != undefined) {
-	const articles = document.querySelectorAll('.single-services article')
-	document.querySelectorAll('.single-services li').forEach((e, i) => {
-		e.addEventListener('click', () => {
-			articles.forEach(a => (a == articles[i]) ? a.classList.add('active') : a.classList.remove('active'))
-		})
-	})
-} 
+  const articles = document.querySelectorAll('.single-services article')
+  document.querySelectorAll('.single-services li').forEach((e, i) => {
+    e.addEventListener('click', () => {
+      articles.forEach((a) =>
+        a == articles[i]
+          ? a.classList.add('active')
+          : a.classList.remove('active')
+      )
+    })
+  })
+}
