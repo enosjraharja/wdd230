@@ -205,8 +205,16 @@ h1 a {
   font-size: 0.8rem;
 }
 
+.fun-facts {
+  background-image: url(/assets/images/fun-facts-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 3rem 0;
+}
+
 .fun-facts .container {
-  background-color: var(--color_fg);
   color: var(--color_bg);
   padding: 1rem;
   display: flex;
@@ -250,7 +258,7 @@ h1 a {
 
 .count-area-content {
   padding: 2rem;
-  background-color: rgba(30, 30, 30, 0.4);
+  background-color: rgba(80, 80, 80, 0.4);
   text-align: center;
 }
 
@@ -268,7 +276,16 @@ h1 a {
   padding: 1rem;
   margin: 3rem 0;
 }
-
+.more-info .container {
+  display: flex;
+  flex-direction: column;
+}
+.more-info .right-content {
+  padding: 1rem 0;
+}
+.more-info h2 {
+  font-size: 2rem;
+}
 .more-info img {
   width: 100%;
 }
@@ -428,6 +445,46 @@ footer a {
   color: var(--color_bg);
 }
 
+.team {
+  padding: 1rem;
+  margin-bottom: 8rem;
+}
+.team .section-heading {
+  padding: 2rem;
+  text-align: center;
+}
+.team .section-heading h2 {
+  font-size: 2rem;
+}
+.team .section-heading em {
+  color: var(--color_primary);
+}
+
+.team-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.team-items .team-item {
+  margin: 1rem 0 2rem 0;
+}
+.team-items .team-item img {
+  width: 100%;
+}
+.team-items .team-item .down-content {
+  padding: 0.6rem 1.2rem;
+}
+.team-items .team-item h4 {
+  margin: 0;
+}
+.team-items .team-item span {
+  display: block;
+  color: var(--color_primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0.6rem 0;
+}
+
 @media (min-width: 968px) {
   .container {
     width: 90%;
@@ -475,6 +532,10 @@ footer a {
     display: flex;
   }
 
+  .team-items {
+    flex-direction: row;
+  }
+
   .fun-facts .container {
     flex-direction: row;
     padding: 2rem;
@@ -497,7 +558,6 @@ footer a {
   }
 
   .more-info .container {
-    display: flex;
     flex-direction: row;
   }
 
