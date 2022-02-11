@@ -81,6 +81,9 @@ footer{
     align-items: center;
     padding-top: 25px;
 }
+#les2header img {
+	max-width: 90%;
+}
 .designgrid{
     display: grid;
     grid-template-columns: 1fr;
